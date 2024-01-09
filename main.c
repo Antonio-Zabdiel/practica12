@@ -2,6 +2,9 @@
 #include<string.h>
 #include <stdlib.h>
 
+#define lon 5
+
+//mi estructura
 typedef struc players{
     int id;
     int numero;
@@ -9,8 +12,10 @@ typedef struc players{
     char posicion[50];
 } PLAYER;
 
-PLAYER jugadores_lista[5];
+//array de estructuras
+PLAYER jugadores_lista[lon];
 
+//funcion que rellena elemento especifico del array
 void rellenar_elementos(int i, int num, char nom, char pos){
     jugadores_lista[i].id = i;
     jugadores_lista[i].numero = num;
@@ -18,10 +23,16 @@ void rellenar_elementos(int i, int num, char nom, char pos){
     strcpy(jugadores_lista[i].posicion, pos);
 }
 
+//fgets(variable, sizeof(variable, stdin))
+//la funcion main
 int main(){
     int nume;
     char nombre, posicion;
+    int x;
+    
+    for(x = 0 ; x < lon ; x++){
 
+    }
 
 
     return 0;
